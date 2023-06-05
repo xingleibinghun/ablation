@@ -1,0 +1,13 @@
+{
+  /**
+   * prettier: 配合 eslint-config-prettier => 关闭与 Prettier 冲突的 ESLint 规则(代码格式化)
+   */
+  "extends": ["react-app", "react-app/jest", "prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  /**
+   * prettier: 配合 eslint-plugin-prettier => 格式化错误会被认为是 ESLint 错误
+   */
+  "plugins": ["prettier"]
+}
